@@ -18,6 +18,13 @@
         android:layout_height="match_parent"
         android:orientation="horizontal"
         android:background="#211046">
+        <fragment
+            android:id="@+id/Main_Host"
+            android:name="androidx.navigation.fragment.NavHostFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:defaultNavHost="true"
+            app:navGraph="@navigation/main_nav" />
     </LinearLayout>
 
 </LinearLayout>
