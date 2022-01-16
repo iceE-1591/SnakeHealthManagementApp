@@ -16,6 +16,9 @@ class Fragment2: Fragment(){
         savedInstanceState: Bundle?
     ): View? {
         val view: View = inflater.inflate(R.layout.fragment2, container, false)
+        view.findViewById<Button>(R.id.btn).setOnClickListener {
+            findNavController().navigate(R.id.second_to_first)
+        }
         return view
     }
 
