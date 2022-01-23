@@ -26,7 +26,7 @@
             android:layout_weight="3"
             android:text="@string/profile"
             android:gravity="center_vertical"
-            android:textSize="15dp" />
+            android:textSize="15sp" />
     </LinearLayout>
 
     <LinearLayout
@@ -49,7 +49,7 @@
             android:layout_weight="3"
             android:text="@string/settings"
             android:gravity="center_vertical"
-            android:textSize="15dp" />
+            android:textSize="15sp" />
     </LinearLayout>
 
     <LinearLayout
@@ -72,7 +72,7 @@
             android:layout_weight="3"
             android:text="@string/feedback"
             android:gravity="center_vertical"
-            android:textSize="15dp" />
+            android:textSize="15sp" />
     </LinearLayout>
 
     <LinearLayout
@@ -95,6 +95,6 @@
             android:layout_weight="3"
             android:text="@string/help"
             android:gravity="center_vertical"
-            android:textSize="15dp" />
+            android:textSize="15sp" />
     </LinearLayout>
 </LinearLayout>
