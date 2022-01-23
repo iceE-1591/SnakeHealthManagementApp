@@ -11,13 +11,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:paddingLeft="20dp">
+        android:paddingStart="20dp">
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="7"
-            android:paddingRight="20dp"
-            android:paddingLeft="10dp"
+            android:paddingEnd="20dp"
+            android:paddingStart="10dp"
             android:paddingTop="5dp"
             app:srcCompat="@drawable/profile_icon" />
         <TextView
@@ -34,13 +34,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:paddingLeft="20dp">
+        android:paddingStart="20dp">
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="7"
-            android:paddingRight="20dp"
-            android:paddingLeft="10dp"
+            android:paddingEnd="20dp"
+            android:paddingStart="10dp"
             android:paddingTop="5dp"
             app:srcCompat="@drawable/settings_icon" />
         <TextView
@@ -57,13 +57,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:paddingLeft="20dp">
+        android:paddingStart="20dp">
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="7"
-            android:paddingRight="20dp"
-            android:paddingLeft="10dp"
+            android:paddingEnd="20dp"
+            android:paddingStart="10dp"
             android:paddingTop="5dp"
             app:srcCompat="@drawable/feedback_icon" />
         <TextView
@@ -80,13 +80,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:paddingLeft="20dp">
+        android:paddingStart="20dp">
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="7"
-            android:paddingRight="20dp"
-            android:paddingLeft="10dp"
+            android:paddingEnd="20dp"
+            android:paddingStart="10dp"
             android:paddingTop="5dp"
             app:srcCompat="@drawable/help_icon" />
         <TextView
