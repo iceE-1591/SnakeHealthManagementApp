@@ -12,6 +12,11 @@
         android:layout_weight="8"
         android:orientation="vertical"
         android:background="@color/MenuColor">
+        <fragment
+            android:id="@+id/menu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            class="com.icee.snakehealthmanagementapp.Menu" />
     </LinearLayout>
 
     <LinearLayout
