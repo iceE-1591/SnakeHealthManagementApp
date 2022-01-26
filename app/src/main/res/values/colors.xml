@@ -10,4 +10,5 @@
     <color name="StatusBar">#625F6A</color>
     <color name="MenuColor">#190B37</color>
     <color name="MainColor">#211046</color>
+    <color name="MenuTextColor">#666666</color>
 </resources>
