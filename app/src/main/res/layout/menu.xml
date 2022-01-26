@@ -25,6 +25,7 @@
             android:layout_height="match_parent"
             android:layout_weight="3"
             android:text="@string/profile"
+            android:textColor="@color/MenuTextColor"
             android:gravity="center_vertical"
             android:textSize="15sp" />
     </LinearLayout>
@@ -48,6 +49,7 @@
             android:layout_height="match_parent"
             android:layout_weight="3"
             android:text="@string/settings"
+            android:textColor="@color/MenuTextColor"
             android:gravity="center_vertical"
             android:textSize="15sp" />
     </LinearLayout>
@@ -71,6 +73,7 @@
             android:layout_height="match_parent"
             android:layout_weight="3"
             android:text="@string/feedback"
+            android:textColor="@color/MenuTextColor"
             android:gravity="center_vertical"
             android:textSize="15sp" />
     </LinearLayout>
@@ -94,6 +97,7 @@
             android:layout_height="match_parent"
             android:layout_weight="3"
             android:text="@string/help"
+            android:textColor="@color/MenuTextColor"
             android:gravity="center_vertical"
             android:textSize="15sp" />
     </LinearLayout>
