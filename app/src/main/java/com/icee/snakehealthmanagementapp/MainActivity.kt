@@ -9,6 +9,10 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
     }
 
+    fun navMain() {
+        setContentView(R.layout.activity_main)
+    }
+
     fun navLogin() {
         setContentView(R.layout.activity_login)
     }
