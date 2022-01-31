@@ -8,7 +8,7 @@ import android.widget.ArrayAdapter
 import android.widget.ImageView
 import android.widget.TextView
 
-class ItemAdapter(context: Context, itemList:List<String>): ArrayAdapter<String>(context,0,itemList){
+class ItemAdapter(context: Context, itemList:List<RowData>): ArrayAdapter<RowData>(context,0,itemList){
     private val layoutInflater = LayoutInflater.from(context)
 
     override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
@@ -25,8 +25,9 @@ class ItemAdapter(context: Context, itemList:List<String>): ArrayAdapter<String>
             view = convertView
         }
         // 処理
+        val rowData: RowData? = getItem(position)
         holder.icon.setImageResource(R.drawable.profile_icon)
-        holder.name.text = getItem(position)
+        holder.name.text = rowData?.name
         return view
     }
 }
