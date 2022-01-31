@@ -8,7 +8,7 @@ import android.view.View
 import android.widget.AdapterView
 
 class ListFragment : ListFragment() {
-    var data = listOf<String>("test1","test2")
+    var data = listOf(RowData("path", "test1"), RowData("path", "test2"))
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
