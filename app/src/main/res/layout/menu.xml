@@ -19,7 +19,8 @@
             android:paddingEnd="20dp"
             android:paddingStart="10dp"
             android:paddingTop="5dp"
-            app:srcCompat="@drawable/profile_icon" />
+            app:srcCompat="@drawable/profile_icon"
+            android:contentDescription="@string/profile" />
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -43,7 +44,8 @@
             android:paddingEnd="20dp"
             android:paddingStart="10dp"
             android:paddingTop="5dp"
-            app:srcCompat="@drawable/settings_icon" />
+            app:srcCompat="@drawable/settings_icon"
+            android:contentDescription="@string/settings" />
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -67,7 +69,8 @@
             android:paddingEnd="20dp"
             android:paddingStart="10dp"
             android:paddingTop="5dp"
-            app:srcCompat="@drawable/feedback_icon" />
+            app:srcCompat="@drawable/feedback_icon"
+            android:contentDescription="@string/feedback" />
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -91,7 +94,8 @@
             android:paddingEnd="20dp"
             android:paddingStart="10dp"
             android:paddingTop="5dp"
-            app:srcCompat="@drawable/help_icon" />
+            app:srcCompat="@drawable/help_icon"
+            android:contentDescription="@string/help" />
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
