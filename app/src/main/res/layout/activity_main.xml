@@ -20,7 +20,8 @@
             <fragment
                 android:id="@+id/ListFragment"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"/>
+                android:layout_height="match_parent"
+                class="com.icee.snakehealthmanagementapp.ListFragment"/>
 
         </LinearLayout>
         <fragment
