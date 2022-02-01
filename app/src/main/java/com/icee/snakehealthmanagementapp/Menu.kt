@@ -21,9 +21,24 @@ class Menu: Fragment(){
         val feedback: View = view.findViewById(R.id.feedback)
         val help: View = view.findViewById(R.id.help)
         views.addAll(listOf(profile, settings, feedback, help))
+
+        profile.setOnClickListener {
+            changeBackgroundColor(profile)
+        }
+
+        settings.setOnClickListener {
+            changeBackgroundColor(settings)
+        }
+
+        feedback.setOnClickListener {
+            changeBackgroundColor(feedback)
+        }
+
+        help.setOnClickListener {
+            changeBackgroundColor(help)
+        }
         return view
     }
-
     fun changeBackgroundColor(view: View) {
         val viewsCopy = views.toMutableList()
         viewsCopy.remove(view)
