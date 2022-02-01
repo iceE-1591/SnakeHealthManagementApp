@@ -39,7 +39,7 @@ class Menu: Fragment(){
         }
         return view
     }
-    fun changeBackgroundColor(view: View) {
+    private fun changeBackgroundColor(view: View) {
         val viewsCopy = views.toMutableList()
         viewsCopy.remove(view)
         viewsCopy.forEach{ v ->
