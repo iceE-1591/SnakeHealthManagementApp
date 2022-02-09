@@ -63,9 +63,11 @@
 
     <CheckBox
         android:id="@+id/isRemember"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="自動ログイン"
+        android:layout_marginHorizontal="20dp"
+        android:text="次回から自動的にログイン"
+        android:textSize="15sp"
         app:layout_constraintBottom_toTopOf="@id/loginButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
