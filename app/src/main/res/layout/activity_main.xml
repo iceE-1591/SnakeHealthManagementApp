@@ -4,45 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <LinearLayout
+    <fragment
+        android:id="@+id/menu"
+        class="com.icee.snakehealthmanagementapp.Menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <fragment
+        android:id="@+id/Nav_Host_Main"
+        android:name="androidx.navigation.fragment.NavHostFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="8"
-        android:orientation="vertical"
-        android:background="@color/MenuColor">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal"
-            android:layout_weight="5">
-            <fragment
-                android:id="@+id/ListFragment"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                class="com.icee.snakehealthmanagementapp.ListFragment"/>
-
-        </LinearLayout>
-        <fragment
-            android:id="@+id/menu"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="5"
-            class="com.icee.snakehealthmanagementapp.Menu"/>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="2"
-        android:background="@color/MainColor">
-        <fragment
-            android:id="@+id/Nav_Host_Main"
-            android:name="androidx.navigation.fragment.NavHostFragment"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:defaultNavHost="true"
-            app:navGraph="@navigation/nav_main" />
-    </LinearLayout>
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/nav_main" />
 </LinearLayout>
