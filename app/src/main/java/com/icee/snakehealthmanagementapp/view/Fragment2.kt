@@ -23,7 +23,7 @@ class Fragment2: Fragment(){
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment2, container, false)
         binding.lifecycleOwner = viewLifecycleOwner
         binding.vm = viewmodel
