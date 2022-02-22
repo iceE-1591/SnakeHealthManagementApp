@@ -27,6 +27,12 @@ class Menu: Fragment(){
         binding.lifecycleOwner = viewLifecycleOwner
         binding.vm = viewmodel
 
+        // タブレットの場合の処理
+        if(!resources.getBoolean(R.bool.is_tablet)) {
+            binding.list.setOnClickListener {
+            }
+        }
+
         val profile = binding.profile
         val settings = binding.settings
         val feedback = binding.feedback
