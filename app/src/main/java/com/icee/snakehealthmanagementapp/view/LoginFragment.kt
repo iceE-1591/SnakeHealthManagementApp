@@ -8,12 +8,12 @@ import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import com.icee.snakehealthmanagementapp.R
-import com.icee.snakehealthmanagementapp.databinding.Fragment2Binding
-import com.icee.snakehealthmanagementapp.viewmodel.Fragment2Data
+import com.icee.snakehealthmanagementapp.databinding.FragmentLoginBinding
+import com.icee.snakehealthmanagementapp.viewmodel.LoginData
 
 class LoginFragment: Fragment(){
-    private lateinit var binding: Fragment2Binding
-    private val viewmodel by viewModels<Fragment2Data>()
+    private lateinit var binding: FragmentLoginBinding
+    private val viewmodel by viewModels<LoginData>()
 
     override fun onCreateView(
         inflater: LayoutInflater,
