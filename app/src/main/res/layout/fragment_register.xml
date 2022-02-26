@@ -40,7 +40,7 @@
         android:id="@+id/editText"
         android:layout_width="200dp"
         android:layout_height="30dp"
-        android:text="@string/editText"
+        android:text="@string/register_editText"
         app:autoSizeTextType="uniform"
         android:textColor="@color/black"
         android:gravity="center"
