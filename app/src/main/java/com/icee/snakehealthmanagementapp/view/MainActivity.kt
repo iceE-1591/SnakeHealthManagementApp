@@ -1,8 +1,9 @@
-package com.icee.snakehealthmanagementapp
+package com.icee.snakehealthmanagementapp.view
 
 import android.content.pm.ActivityInfo
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.icee.snakehealthmanagementapp.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
