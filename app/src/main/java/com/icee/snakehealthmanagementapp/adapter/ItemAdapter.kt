@@ -1,4 +1,4 @@
-package com.icee.snakehealthmanagementapp
+package com.icee.snakehealthmanagementapp.adapter
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -7,6 +7,9 @@ import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import android.widget.ImageView
 import android.widget.TextView
+import com.icee.snakehealthmanagementapp.R
+import com.icee.snakehealthmanagementapp.RowData
+import com.icee.snakehealthmanagementapp.ViewHolderItem
 
 class ItemAdapter(context: Context, itemList:List<RowData>): ArrayAdapter<RowData>(context,0,itemList){
     private val layoutInflater = LayoutInflater.from(context)
