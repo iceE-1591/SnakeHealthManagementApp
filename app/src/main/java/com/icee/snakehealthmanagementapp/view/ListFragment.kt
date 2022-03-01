@@ -1,4 +1,4 @@
-package com.icee.snakehealthmanagementapp
+package com.icee.snakehealthmanagementapp.view
 
 import androidx.fragment.app.ListFragment
 import android.os.Bundle
@@ -6,6 +6,8 @@ import android.view.ViewGroup
 import android.view.LayoutInflater
 import android.view.View
 import android.widget.AdapterView
+import com.icee.snakehealthmanagementapp.RowData
+import com.icee.snakehealthmanagementapp.adapter.ItemAdapter
 
 class ListFragment : ListFragment() {
     var data = listOf(RowData("path", "test1"), RowData("path", "test2"))
