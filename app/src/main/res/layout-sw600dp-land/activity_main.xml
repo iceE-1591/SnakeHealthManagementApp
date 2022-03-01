@@ -21,7 +21,7 @@
                 android:id="@+id/ListFragment"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                class="com.icee.snakehealthmanagementapp.ListFragment"/>
+                class="com.icee.snakehealthmanagementapp.view.ListFragment"/>
 
         </LinearLayout>
         <fragment
