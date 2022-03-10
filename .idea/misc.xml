@@ -3,7 +3,54 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Owner/AndroidStudioProjects/SnakeHealthManagementApp/app/src/main/res/layout/activity_main.xml" value="0.2957427536231884" />
+        <entry key="..\:/Users/Owner/AndroidStudioProjects/SnakeHealthManagementApp/app/src/main/res/drawable/create_account_btn.xml" value="0.168" />
+        <entry key="..\:/Users/Owner/AndroidStudioProjects/SnakeHealthManagementApp/app/src/main/res/drawable/feedback_icon.xml" value="0.4036458333333333" />
+        <entry key="..\:/Users/Owner/AndroidStudioProjects/SnakeHealthManagementApp/app/src/main/res/drawable/help_icon.xml" value="0.4036458333333333" />
+        <entry key="..\:/Users/Owner/AndroidStudioProjects/SnakeHealthManagementApp/app/src/main/res/drawable/ic____________.xml" value="0.22083333333333333" />
+        <entry key="..\:/Users/Owner/AndroidStudioProjects/SnakeHealthManagementApp/app/src/main/res/drawable/ic_iconmonstr_gear_2.xml" value="0.22083333333333333" />
+        <entry key="..\:/Users/Owner/AndroidStudioProjects/SnakeHealthManagementApp/app/src/main/res/drawable/ic_iconmonstr_gear_thin.xml" value="0.22083333333333333" />
+        <entry key="..\:/Users/Owner/AndroidStudioProjects/SnakeHealthManagementApp/app/src/main/res/drawable/ic_iconmonstr_user_circle_thin.xml" value="0.4036458333333333" />
+        <entry key="..\:/Users/Owner/AndroidStudioProjects/SnakeHealthManagementApp/app/src/main/res/drawable/ic_icons8___.xml" value="0.22083333333333333" />
+        <entry key="..\:/Users/Owner/AndroidStudioProjects/SnakeHealthManagementApp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.266" />
+        <entry key="..\:/Users/Owner/AndroidStudioProjects/SnakeHealthManagementApp/app/src/main/res/drawable/icon_editbotton.xml" value="0.266" />
+        <entry key="..\:/Users/Owner/AndroidStudioProjects/SnakeHealthManagementApp/app/src/main/res/drawable/list_icon.xml" value="0.266" />
+        <entry key="..\:/Users/Owner/AndroidStudioProjects/SnakeHealthManagementApp/app/src/main/res/drawable/menu_icon.xml" value="0.266" />
+        <entry key="..\:/Users/Owner/AndroidStudioProjects/SnakeHealthManagementApp/app/src/main/res/drawable/profile_icon.xml" value="0.23541666666666666" />
+        <entry key="..\:/Users/Owner/AndroidStudioProjects/SnakeHealthManagementApp/app/src/main/res/drawable/settings.xml" value="0.4036458333333333" />
+        <entry key="..\:/Users/Owner/AndroidStudioProjects/SnakeHealthManagementApp/app/src/main/res/drawable/settings_icon.xml" value="0.2" />
+        <entry key="..\:/Users/Owner/AndroidStudioProjects/SnakeHealthManagementApp/app/src/main/res/layout-land/fragment1.xml" value="0.328042328042328" />
+        <entry key="..\:/Users/Owner/AndroidStudioProjects/SnakeHealthManagementApp/app/src/main/res/layout-land/fragment2.xml" value="0.328042328042328" />
+        <entry key="..\:/Users/Owner/AndroidStudioProjects/SnakeHealthManagementApp/app/src/main/res/layout-land/menu.xml" value="0.328042328042328" />
+        <entry key="..\:/Users/Owner/AndroidStudioProjects/SnakeHealthManagementApp/app/src/main/res/layout-sw600dp-land/activity_login.xml" value="0.17927710843373493" />
+        <entry key="..\:/Users/Owner/AndroidStudioProjects/SnakeHealthManagementApp/app/src/main/res/layout-sw600dp-land/activity_main.xml" value="0.17927710843373493" />
+        <entry key="..\:/Users/Owner/AndroidStudioProjects/SnakeHealthManagementApp/app/src/main/res/layout-sw600dp-land/fragment_login.xml" value="0.5" />
+        <entry key="..\:/Users/Owner/AndroidStudioProjects/SnakeHealthManagementApp/app/src/main/res/layout-sw600dp-land/menu.xml" value="0.25" />
+        <entry key="..\:/Users/Owner/AndroidStudioProjects/SnakeHealthManagementApp/app/src/main/res/layout-sw600dp/activity_login.xml" value="0.18508557457212713" />
+        <entry key="..\:/Users/Owner/AndroidStudioProjects/SnakeHealthManagementApp/app/src/main/res/layout-sw600dp/activity_main.xml" value="0.18508557457212713" />
+        <entry key="..\:/Users/Owner/AndroidStudioProjects/SnakeHealthManagementApp/app/src/main/res/layout-sw600dp/menu.xml" value="0.25853825136612024" />
+        <entry key="..\:/Users/Owner/AndroidStudioProjects/SnakeHealthManagementApp/app/src/main/res/layout-v26/fragment_login.xml" value="0.1" />
+        <entry key="..\:/Users/Owner/AndroidStudioProjects/SnakeHealthManagementApp/app/src/main/res/layout/activity_login.xml" value="0.1" />
+        <entry key="..\:/Users/Owner/AndroidStudioProjects/SnakeHealthManagementApp/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/Owner/AndroidStudioProjects/SnakeHealthManagementApp/app/src/main/res/layout/fragment1.xml" value="0.2" />
+        <entry key="..\:/Users/Owner/AndroidStudioProjects/SnakeHealthManagementApp/app/src/main/res/layout/fragment2.xml" value="0.2554347826086957" />
+        <entry key="..\:/Users/Owner/AndroidStudioProjects/SnakeHealthManagementApp/app/src/main/res/layout/fragment_createaccount.xml" value="0.33" />
+        <entry key="..\:/Users/Owner/AndroidStudioProjects/SnakeHealthManagementApp/app/src/main/res/layout/fragment_feedback.xml" value="0.5" />
+        <entry key="..\:/Users/Owner/AndroidStudioProjects/SnakeHealthManagementApp/app/src/main/res/layout/fragment_help.xml" value="0.34148550724637683" />
+        <entry key="..\:/Users/Owner/AndroidStudioProjects/SnakeHealthManagementApp/app/src/main/res/layout/fragment_login.xml" value="0.33" />
+        <entry key="..\:/Users/Owner/AndroidStudioProjects/SnakeHealthManagementApp/app/src/main/res/layout/fragment_profile.xml" value="0.34148550724637683" />
+        <entry key="..\:/Users/Owner/AndroidStudioProjects/SnakeHealthManagementApp/app/src/main/res/layout/fragment_register.xml" value="0.33" />
+        <entry key="..\:/Users/Owner/AndroidStudioProjects/SnakeHealthManagementApp/app/src/main/res/layout/fragment_settings.xml" value="0.34148550724637683" />
+        <entry key="..\:/Users/Owner/AndroidStudioProjects/SnakeHealthManagementApp/app/src/main/res/layout/fragment_test.xml" value="0.26268115942028986" />
+        <entry key="..\:/Users/Owner/AndroidStudioProjects/SnakeHealthManagementApp/app/src/main/res/layout/fragment_test2.xml" value="0.2554347826086957" />
+        <entry key="..\:/Users/Owner/AndroidStudioProjects/SnakeHealthManagementApp/app/src/main/res/layout/fragment_verify.xml" value="0.33" />
+        <entry key="..\:/Users/Owner/AndroidStudioProjects/SnakeHealthManagementApp/app/src/main/res/layout/list.xml" value="0.21927083333333333" />
+        <entry key="..\:/Users/Owner/AndroidStudioProjects/SnakeHealthManagementApp/app/src/main/res/layout/list_item.xml" value="0.21927083333333333" />
+        <entry key="..\:/Users/Owner/AndroidStudioProjects/SnakeHealthManagementApp/app/src/main/res/layout/listview.xml" value="0.2636986301369863" />
+        <entry key="..\:/Users/Owner/AndroidStudioProjects/SnakeHealthManagementApp/app/src/main/res/layout/main.xml" value="0.26358695652173914" />
+        <entry key="..\:/Users/Owner/AndroidStudioProjects/SnakeHealthManagementApp/app/src/main/res/layout/menu.xml" value="0.5" />
+        <entry key="..\:/Users/Owner/AndroidStudioProjects/SnakeHealthManagementApp/app/src/main/res/layout/menu_button.xml" value="0.33" />
+        <entry key="..\:/Users/Owner/AndroidStudioProjects/SnakeHealthManagementApp/app/src/main/res/layout/row.xml" value="0.27717391304347827" />
+        <entry key="..\:/Users/Owner/AndroidStudioProjects/SnakeHealthManagementApp/app/src/main/res/layout/rv.xml" value="0.27717391304347827" />
       </map>
     </option>
   </component>
