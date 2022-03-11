@@ -1,10 +1,10 @@
 <resources>
     <string name="app_name">SnakeHealthManagement</string>
 
-    <string name="menu_profile">Profile</string>
-    <string name="menu_settings">Settings</string>
-    <string name="menu_feedback">Feedback</string>
-    <string name="menu_help">Help</string>
-    <string name="menu_list">List</string>
-    <string name="register_editText"><u>アイコンを変更</u></string>
+    <string name="menu_profile_button">Profile</string>
+    <string name="menu_settings_button">Settings</string>
+    <string name="menu_feedback_button">Feedback</string>
+    <string name="menu_help_button">Help</string>
+    <string name="menu_list_button">List</string>
+    <string name="register_editicon_button"><u>アイコンを変更</u></string>
 </resources>
