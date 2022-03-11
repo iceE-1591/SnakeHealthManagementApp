@@ -18,7 +18,7 @@
             android:id="@+id/list"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:contentDescription="@string/menu_list"
+            android:contentDescription="@string/menu_list_button"
             app:srcCompat="@drawable/list_icon"
             android:padding="10dp" />
 
@@ -32,7 +32,7 @@
                 android:id="@+id/profile"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:contentDescription="@string/menu_profile"
+                android:contentDescription="@string/menu_profile_button"
                 app:srcCompat="@drawable/profile_icon"
                 android:paddingVertical="10dp"
                 android:paddingHorizontal="3dp" />
@@ -41,7 +41,7 @@
                 android:id="@+id/settings"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:contentDescription="@string/menu_settings"
+                android:contentDescription="@string/menu_settings_button"
                 app:srcCompat="@drawable/settings_icon"
                 android:paddingVertical="10dp"
                 android:paddingHorizontal="3dp" />
@@ -50,7 +50,7 @@
                 android:id="@+id/feedback"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:contentDescription="@string/menu_feedback"
+                android:contentDescription="@string/menu_feedback_button"
                 app:srcCompat="@drawable/feedback_icon"
                 android:paddingVertical="10dp"
                 android:paddingHorizontal="3dp" />
@@ -59,7 +59,7 @@
                 android:id="@+id/help"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:contentDescription="@string/menu_help"
+                android:contentDescription="@string/menu_help_button"
                 app:srcCompat="@drawable/help_icon"
                 android:paddingVertical="10dp"
                 android:paddingHorizontal="3dp" />
