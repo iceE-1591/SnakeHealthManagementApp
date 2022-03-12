@@ -9,7 +9,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:gravity="center"
-        android:text="REGISTER"
+        android:text="@string/register_title_text"
         android:fontFamily="@font/autourone"
         android:textSize="50sp"
         android:textColor="@color/black"
@@ -33,13 +33,13 @@
         app:layout_constraintBottom_toTopOf="@+id/editText"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:contentDescription="icon_editbutton" />
+        android:contentDescription="@string/register_editicon_button" />
 
     <TextView
         android:id="@+id/editText"
         android:layout_width="200dp"
         android:layout_height="30dp"
-        android:text="@string/register_editicon_button"
+        android:text="@string/register_editicon_text"
         app:autoSizeTextType="uniform"
         android:textColor="@color/black"
         android:gravity="center"
@@ -64,7 +64,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:hint="Username"
+            android:hint="@string/register_username_hint"
             android:inputType="text"
             />
     </com.google.android.material.textfield.TextInputLayout>
@@ -76,7 +76,7 @@
         android:layout_height="60dp"
         android:layout_gravity="center"
         android:layout_marginTop="50dp"
-        android:text="sign up"
+        android:text="@string/register_signup_button"
         android:textColor="@color/black"
         android:textAppearance="@style/TextAppearance.MaterialComponents.Button"
         app:backgroundTint="#00000000"
