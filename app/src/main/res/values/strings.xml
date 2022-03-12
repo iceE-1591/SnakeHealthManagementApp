@@ -1,11 +1,6 @@
 <resources>
     <string name="app_name">SnakeHealthManagement</string>
 
-    <string name="menu_profile_button">Profile</string>
-    <string name="menu_settings_button">Settings</string>
-    <string name="menu_feedback_button">Feedback</string>
-    <string name="menu_help_button">Help</string>
-    <string name="menu_list_button">List</string>
     <string name="login_title_text">LOGIN</string>
     <string name="login_email_hint">Email</string>
     <string name="login_password_hint">Password</string>
@@ -13,9 +8,16 @@
     <string name="login_login_button">Log in</string>
     <string name="login_signup_button">sign up</string>
     <string name="login_forgot_text">パスワードを忘れた場合</string>
+
     <string name="register_editicon_text"><u>アイコンを変更</u></string>
     <string name="register_title_text">REGISTER</string>
     <string name="register_editicon_button">icon_editbutton</string>
     <string name="register_username_hint">Username</string>
     <string name="register_signup_button">sign up</string>
+
+    <string name="menu_profile_button">Profile</string>
+    <string name="menu_settings_button">Settings</string>
+    <string name="menu_feedback_button">Feedback</string>
+    <string name="menu_help_button">Help</string>
+    <string name="menu_list_button">List</string>
 </resources>
