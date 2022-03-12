@@ -109,7 +109,7 @@
             android:layout_width="0dp"
             android:layout_height="60dp"
             android:layout_gravity="center"
-            android:text="@string/login_signup_button"
+            android:text="@string/signup_button"
             android:textColor="@color/black"
             android:textAppearance="@style/TextAppearance.MaterialComponents.Button"
             app:backgroundTint="#00000000"
