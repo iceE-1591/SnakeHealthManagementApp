@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".view.MainActivity">
 
-    <fragment
+    <androidx.fragment.app.FragmentContainerView
         android:id="@+id/menu"
         class="com.icee.snakehealthmanagementapp.view.Menu"
         android:layout_width="match_parent"
@@ -16,7 +16,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toTopOf="@+id/Nav_Host_Main"/>
 
-    <fragment
+    <androidx.fragment.app.FragmentContainerView
         android:id="@+id/Nav_Host_Main"
         android:name="androidx.navigation.fragment.NavHostFragment"
         android:layout_width="match_parent"
