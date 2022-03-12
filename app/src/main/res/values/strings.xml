@@ -12,5 +12,10 @@
     <string name="login_auto_text">次回から自動的にログイン</string>
     <string name="login_login_button">Log in</string>
     <string name="login_signup_button">sign up</string>
-    <string name="login_forgot_button">パスワードを忘れた場合</string>
+    <string name="login_forgot_text">パスワードを忘れた場合</string>
+    <string name="register_editicon_text"><u>アイコンを変更</u></string>
+    <string name="register_title_text">REGISTER</string>
+    <string name="register_editicon_button">icon_editbutton</string>
+    <string name="register_username_hint">Username</string>
+    <string name="register_signup_button">sign up</string>
 </resources>
