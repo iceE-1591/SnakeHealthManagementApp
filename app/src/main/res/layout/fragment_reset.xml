@@ -17,7 +17,7 @@
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:gravity="center"
-            android:text="RESET"
+            android:text="@string/reset_title_text"
             android:fontFamily="@font/autourone"
             android:textSize="50sp"
             android:textColor="@color/black"
@@ -50,7 +50,7 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:hint="Password"
+                android:hint="@string/reset_password_hint"
                 android:inputType="textPassword" />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -72,7 +72,7 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:hint="Confirm"
+                android:hint="@string/reset_confirm_hint"
                 android:inputType="textPassword" />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -83,7 +83,7 @@
             android:layout_height="60dp"
             android:layout_gravity="center"
             android:layout_marginTop="50dp"
-            android:text="Log in"
+            android:text="@string/reset_login_button"
             android:textColor="@color/black"
             android:textAppearance="@style/TextAppearance.MaterialComponents.Button"
             app:backgroundTint="#00000000"
@@ -99,7 +99,7 @@
             android:id="@+id/to_login"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="ログイン画面に戻る"
+            android:text="@string/reset_tologin_text"
             android:textColor="#77688D"
             android:layout_marginStart="20dp"
             android:layout_marginBottom="30dp"
