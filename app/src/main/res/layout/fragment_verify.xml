@@ -17,7 +17,7 @@
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:gravity="center"
-            android:text="VERIFY"
+            android:text="@string/verify_title_text"
             android:fontFamily="@font/autourone"
             android:textSize="50sp"
             android:textColor="@color/black"
@@ -38,7 +38,7 @@
             android:layout_height="0dp"
             android:layout_marginTop="20dp"
             android:layout_marginHorizontal="30dp"
-            android:text="メールに認証コードを送信しました\n認証コードを入力してください\n認証が完了すると\nパスワードがリセットされます"
+            android:text="@string/verify_description_text"
             android:textColor="@color/black"
             app:autoSizeTextType="uniform"
             android:gravity="center"
@@ -62,7 +62,7 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:hint="コードを入力"
+                android:hint="@string/verify_code_hint"
                 android:inputType="number" />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -71,7 +71,7 @@
             android:layout_width="match_parent"
             android:layout_height="20dp"
             android:layout_marginTop="20dp"
-            android:text="メールが送られてこない？　再送信"
+            android:text="@string/verify_resend_text"
             android:textColor="#77688D"
             android:gravity="center"
             app:layout_constraintTop_toBottomOf="@id/code"
@@ -86,7 +86,7 @@
             android:layout_height="60dp"
             android:layout_gravity="center"
             android:layout_marginTop="50dp"
-            android:text="SEND"
+            android:text="@string/verify_send_button"
             android:textColor="@color/black"
             android:textAppearance="@style/TextAppearance.MaterialComponents.Button"
             app:backgroundTint="#00000000"
@@ -102,7 +102,7 @@
             android:id="@+id/to_login"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="ログイン画面に戻る"
+            android:text="@string/verify_tologin_text"
             android:textColor="#77688D"
             android:layout_marginStart="20dp"
             android:layout_marginBottom="30dp"
