@@ -22,6 +22,12 @@
     <string name="verify_send_button">SEND</string>
     <string name="verify_tologin_text">ログイン画面に戻る</string>
 
+    <string name="reset_title_text">RESET</string>
+    <string name="reset_password_hint">Password</string>
+    <string name="reset_confirm_hint">Confirm</string>
+    <string name="reset_login_button">Log in</string>
+    <string name="reset_tologin_text">ログイン画面に戻る</string>
+
     <string name="menu_profile_button">Profile</string>
     <string name="menu_settings_button">Settings</string>
     <string name="menu_feedback_button">Feedback</string>
