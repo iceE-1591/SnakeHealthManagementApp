@@ -2,6 +2,7 @@
     <string name="app_name">SnakeHealthManagement</string>
 
     <string name="signup_button">sign up</string>
+    <string name="tologin_text">ログイン画面に戻る</string>
 
     <string name="login_title_text">LOGIN</string>
     <string name="login_email_hint">Email</string>
@@ -20,13 +21,11 @@
     <string name="verify_code_hint">コードを入力</string>
     <string name="verify_resend_text">メールが送られてこない？　再送信</string>
     <string name="verify_send_button">SEND</string>
-    <string name="verify_tologin_text">ログイン画面に戻る</string>
 
     <string name="reset_title_text">RESET</string>
     <string name="reset_password_hint">Password</string>
     <string name="reset_confirm_hint">Confirm</string>
     <string name="reset_login_button">Log in</string>
-    <string name="reset_tologin_text">ログイン画面に戻る</string>
 
     <string name="menu_profile_button">Profile</string>
     <string name="menu_settings_button">Settings</string>
