@@ -10,7 +10,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         if(!resources.getBoolean(R.bool.is_tablet)) // 表示機器がスマートフォンの場合は縦画面固定にする
             requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
-        navMain()
+        navLogin()
     }
 
     fun navMain() {
