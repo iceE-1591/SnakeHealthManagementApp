@@ -6,8 +6,47 @@
     app:startDestination="@id/loginFragment">
     <fragment
         android:id="@+id/loginFragment"
-        android:name="com.icee.snakehealthmanagementapp.LoginFragment"
+        android:name="com.icee.snakehealthmanagementapp.view.LoginFragment"
         android:label="login"
         tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/login_to_register"
+            app:destination="@id/registerFragment"/>
+        <action
+            android:id="@+id/login_to_verify"
+            app:destination="@id/verifyFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.icee.snakehealthmanagementapp.view.RegisterFragment"
+        android:label="register"
+        tools:layout="@layout/fragment_register">
+        <action
+            android:id="@+id/register_to_login"
+            app:destination="@id/loginFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/verifyFragment"
+        android:name="com.icee.snakehealthmanagementapp.view.VerifyFragment"
+        android:label="verify"
+        tools:layout="@layout/fragment_verify">
+        <action
+            android:id="@+id/verify_to_reset"
+            app:destination="@id/resetFragment"/>
+        <action
+            android:id="@+id/verify_to_login"
+            app:destination="@id/loginFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/resetFragment"
+        android:name="com.icee.snakehealthmanagementapp.view.ResetFragment"
+        android:label="reset"
+        tools:layout="@layout/fragment_reset">
+        <action
+            android:id="@+id/reset_to_login"
+            app:destination="@id/resetFragment"/>
     </fragment>
 </navigation>
