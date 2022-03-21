@@ -47,6 +47,6 @@
         tools:layout="@layout/fragment_reset">
         <action
             android:id="@+id/reset_to_login"
-            app:destination="@id/resetFragment"/>
+            app:destination="@id/loginFragment"/>
     </fragment>
 </navigation>
