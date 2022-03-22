@@ -96,6 +96,17 @@
             app:layout_constraintStart_toEndOf="@id/guideline_button_start"
             app:layout_constraintEnd_toStartOf="@id/guideline_button_end" />
 
+        <TextView
+            android:id="@+id/to_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tologin_text"
+            android:textColor="#77688D"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="30dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline_button_start"
             android:layout_width="0dp"
