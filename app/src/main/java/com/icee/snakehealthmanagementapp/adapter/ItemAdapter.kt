@@ -8,8 +8,8 @@ import android.widget.ArrayAdapter
 import android.widget.ImageView
 import android.widget.TextView
 import com.icee.snakehealthmanagementapp.R
-import com.icee.snakehealthmanagementapp.RowData
-import com.icee.snakehealthmanagementapp.ViewHolderItem
+import com.icee.snakehealthmanagementapp.entity.RowData
+import com.icee.snakehealthmanagementapp.entity.ViewHolderItem
 
 class ItemAdapter(context: Context, itemList:List<RowData>): ArrayAdapter<RowData>(context,0,itemList){
     private val layoutInflater = LayoutInflater.from(context)

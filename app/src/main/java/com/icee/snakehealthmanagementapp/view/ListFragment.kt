@@ -1,13 +1,13 @@
 package com.icee.snakehealthmanagementapp.view
 
-import androidx.fragment.app.ListFragment
 import android.os.Bundle
-import android.view.ViewGroup
 import android.view.LayoutInflater
 import android.view.View
+import android.view.ViewGroup
 import android.widget.AdapterView
-import com.icee.snakehealthmanagementapp.RowData
+import androidx.fragment.app.ListFragment
 import com.icee.snakehealthmanagementapp.adapter.ItemAdapter
+import com.icee.snakehealthmanagementapp.entity.RowData
 
 class ListFragment : ListFragment() {
     var data = listOf(RowData("path", "test1"), RowData("path", "test2"))
