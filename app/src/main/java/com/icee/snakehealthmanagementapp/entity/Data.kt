@@ -1,4 +1,4 @@
-package com.icee.snakehealthmanagementapp
+package com.icee.snakehealthmanagementapp.entity
 
 import android.widget.ImageView
 import android.widget.TextView
