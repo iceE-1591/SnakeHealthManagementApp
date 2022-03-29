@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
+import androidx.navigation.fragment.findNavController
 import com.icee.snakehealthmanagementapp.R
 import com.icee.snakehealthmanagementapp.databinding.FragmentVerifyBinding
 import com.icee.snakehealthmanagementapp.viewmodel.VerifyData
@@ -23,6 +24,14 @@ class VerifyFragment: Fragment(){
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_verify, container, false)
         binding.lifecycleOwner = viewLifecycleOwner
         binding.vm = viewmodel
+
+        viewmodel.clickedState.observe(viewLifecycleOwner) {
+            when(it) {
+                "RESET" -> findNavController().navigate(R.id.verify_to_reset)
+                "LOGIN" -> findNavController().navigate(R.id.verify_to_login)
+            }
+        }
+
         return binding.root
     }
 }
