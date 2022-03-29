@@ -20,7 +20,7 @@ class VerifyFragment: Fragment(){
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        binding = DataBindingUtil.inflate(inflater, R.layout.fragment_login, container, false)
+        binding = DataBindingUtil.inflate(inflater, R.layout.fragment_verify, container, false)
         binding.lifecycleOwner = viewLifecycleOwner
         binding.vm = viewmodel
         return binding.root
