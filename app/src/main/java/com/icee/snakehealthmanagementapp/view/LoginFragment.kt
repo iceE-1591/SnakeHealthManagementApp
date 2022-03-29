@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
+import androidx.navigation.fragment.findNavController
 import com.icee.snakehealthmanagementapp.R
 import com.icee.snakehealthmanagementapp.databinding.FragmentLoginBinding
 import com.icee.snakehealthmanagementapp.viewmodel.LoginData
@@ -23,6 +24,19 @@ class LoginFragment: Fragment(){
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_login, container, false)
         binding.lifecycleOwner = viewLifecycleOwner
         binding.vm = viewmodel
+
+        viewmodel.clickedState.observe(viewLifecycleOwner) {
+            when(it) {
+                "MAIN" -> (activity as MainActivity).navMain()
+                "REGISTER" -> findNavController().navigate(R.id.login_to_register)
+                "VERIFY" -> findNavController().navigate(R.id.login_to_verify)
+            }
+        }
+
+        binding.loginButton.setOnClickListener {
+            findNavController().navigate(R.id.login_to_register)
+        }
+
         return binding.root
     }
 }
