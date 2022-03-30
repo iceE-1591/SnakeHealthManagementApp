@@ -60,6 +60,7 @@
             app:layout_constraintEnd_toEndOf="parent">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:text="@={vm.code}"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:hint="@string/verify_code_hint"
