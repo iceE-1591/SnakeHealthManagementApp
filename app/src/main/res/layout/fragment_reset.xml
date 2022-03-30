@@ -48,6 +48,7 @@
             app:layout_constraintEnd_toEndOf="parent">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:text="@={vm.password}"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:hint="@string/reset_password_hint"
@@ -70,6 +71,7 @@
             app:layout_constraintEnd_toEndOf="parent">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:text="@={vm.confirm}"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:hint="@string/reset_confirm_hint"
