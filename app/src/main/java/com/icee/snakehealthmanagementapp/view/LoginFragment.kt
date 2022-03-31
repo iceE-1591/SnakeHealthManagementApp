@@ -9,8 +9,8 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import com.icee.snakehealthmanagementapp.R
-import com.icee.snakehealthmanagementapp.databinding.FragmentLoginBinding
 import com.icee.snakehealthmanagementapp.constant.ClickedState
+import com.icee.snakehealthmanagementapp.databinding.FragmentLoginBinding
 import com.icee.snakehealthmanagementapp.viewmodel.LoginData
 
 class LoginFragment: Fragment(){
@@ -32,10 +32,6 @@ class LoginFragment: Fragment(){
                 ClickedState.REGISTER -> findNavController().navigate(R.id.login_to_register)
                 ClickedState.VERIFY -> findNavController().navigate(R.id.login_to_verify)
             }
-        }
-
-        binding.loginButton.setOnClickListener {
-            findNavController().navigate(R.id.login_to_register)
         }
 
         return binding.root
