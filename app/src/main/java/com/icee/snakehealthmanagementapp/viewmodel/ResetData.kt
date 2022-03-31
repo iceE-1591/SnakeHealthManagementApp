@@ -9,10 +9,8 @@ import com.icee.snakehealthmanagementapp.constant.ClickedState
 class ResetData : ViewModel() {
     private val _clickedState = LiveEvent<ClickedState>()
     val clickedState : LiveData<ClickedState> = _clickedState
-    private val _password = MutableLiveData<String>()
-    val password : LiveData<String> = _password
-    private val _confirm = MutableLiveData<String>()
-    val confirm : LiveData<String> = _confirm
+    val password = MutableLiveData<String>()
+    val confirm = MutableLiveData<String>()
 
     fun toMain() {
         _clickedState.value = ClickedState.MAIN
