@@ -9,8 +9,7 @@ import com.icee.snakehealthmanagementapp.constant.ClickedState
 class VerifyData : ViewModel() {
     private val _clickedState = LiveEvent<ClickedState>()
     val clickedState : LiveData<ClickedState> = _clickedState
-    private val _code = MutableLiveData<String>()
-    val code : LiveData<String> = _code
+    val code = MutableLiveData<String>()
 
     fun toReset() {
         _clickedState.value = ClickedState.RESET
