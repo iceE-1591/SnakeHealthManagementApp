@@ -10,6 +10,7 @@ import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import com.icee.snakehealthmanagementapp.R
 import com.icee.snakehealthmanagementapp.databinding.FragmentResetBinding
+import com.icee.snakehealthmanagementapp.constant.ClickedState
 import com.icee.snakehealthmanagementapp.viewmodel.ResetData
 
 class ResetFragment: Fragment(){
@@ -27,8 +28,8 @@ class ResetFragment: Fragment(){
 
         viewmodel.clickedState.observe(viewLifecycleOwner) {
             when(it) {
-                "MAIN" -> (activity as MainActivity).navMain()
-                "LOGIN" -> findNavController().navigate(R.id.reset_to_login)
+                ClickedState.MAIN -> (activity as MainActivity).navMain()
+                ClickedState.LOGIN -> findNavController().navigate(R.id.reset_to_login)
             }
         }
 
