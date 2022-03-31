@@ -9,10 +9,8 @@ import com.icee.snakehealthmanagementapp.constant.ClickedState
 class LoginData : ViewModel() {
     private val _clickedState = LiveEvent<ClickedState>()
     val clickedState : LiveData<ClickedState> = _clickedState
-    private val _email = MutableLiveData<String>()
-    val email : LiveData<String> = _email
-    private val _password = MutableLiveData<String>()
-    val password : LiveData<String> = _password
+    val email = MutableLiveData<String>()
+    val password = MutableLiveData<String>()
 
     fun toMain() {
         _clickedState.value = ClickedState.MAIN
