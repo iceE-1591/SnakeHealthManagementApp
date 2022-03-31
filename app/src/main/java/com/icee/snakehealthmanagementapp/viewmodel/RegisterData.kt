@@ -9,8 +9,7 @@ import com.icee.snakehealthmanagementapp.constant.ClickedState
 class RegisterData: ViewModel() {
     private val _clickedState = LiveEvent<ClickedState>()
     val clickedState : LiveData<ClickedState> = _clickedState
-    private val _name = MutableLiveData<String>()
-    val name : LiveData<String> = _name
+    val name = MutableLiveData<String>()
 
     fun toMain() {
         _clickedState.value = ClickedState.MAIN
