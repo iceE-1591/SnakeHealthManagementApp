@@ -10,6 +10,7 @@ import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import com.icee.snakehealthmanagementapp.R
 import com.icee.snakehealthmanagementapp.databinding.FragmentVerifyBinding
+import com.icee.snakehealthmanagementapp.constant.ClickedState
 import com.icee.snakehealthmanagementapp.viewmodel.VerifyData
 
 class VerifyFragment: Fragment(){
@@ -27,8 +28,8 @@ class VerifyFragment: Fragment(){
 
         viewmodel.clickedState.observe(viewLifecycleOwner) {
             when(it) {
-                "RESET" -> findNavController().navigate(R.id.verify_to_reset)
-                "LOGIN" -> findNavController().navigate(R.id.verify_to_login)
+                ClickedState.RESET -> findNavController().navigate(R.id.verify_to_reset)
+                ClickedState.LOGIN -> findNavController().navigate(R.id.verify_to_login)
             }
         }
 
