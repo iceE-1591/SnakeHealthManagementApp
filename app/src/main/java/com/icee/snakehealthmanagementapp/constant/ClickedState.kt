@@ -1,4 +1,4 @@
-package com.icee.snakehealthmanagementapp.enum
+package com.icee.snakehealthmanagementapp.constant
 
 enum class ClickedState {
     MAIN,
