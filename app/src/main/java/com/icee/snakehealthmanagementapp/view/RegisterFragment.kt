@@ -10,6 +10,7 @@ import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import com.icee.snakehealthmanagementapp.R
 import com.icee.snakehealthmanagementapp.databinding.FragmentRegisterBinding
+import com.icee.snakehealthmanagementapp.constant.ClickedState
 import com.icee.snakehealthmanagementapp.viewmodel.RegisterData
 
 class RegisterFragment: Fragment(){
@@ -27,8 +28,8 @@ class RegisterFragment: Fragment(){
 
         viewmodel.clickedState.observe(viewLifecycleOwner) {
             when(it) {
-                "MAIN" -> (activity as MainActivity).navMain()
-                "LOGIN" -> findNavController().navigate(R.id.register_to_login)
+                ClickedState.MAIN -> (activity as MainActivity).navMain()
+                ClickedState.LOGIN -> findNavController().navigate(R.id.register_to_login)
             }
         }
 
