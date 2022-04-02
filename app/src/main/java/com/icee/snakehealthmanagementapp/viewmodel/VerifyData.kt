@@ -17,4 +17,7 @@ class VerifyData : ViewModel() {
     fun toLogin() {
         _clickedState.value = ClickedState.LOGIN
     }
+
+    fun reSend() {
+    }
 }
