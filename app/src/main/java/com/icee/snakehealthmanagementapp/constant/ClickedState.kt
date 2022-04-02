@@ -6,5 +6,5 @@ enum class ClickedState {
     REGISTER,
     VERIFY,
     RESET,
-    ICON,
+    ICON
 }
