@@ -36,6 +36,7 @@
             android:id="@+id/icon"
             android:layout_width="100dp"
             android:layout_height="100dp"
+            android:onClick="@{() -> vm.toIcon()}"
             app:srcCompat="@drawable/icon_editbotton"
             app:layout_constraintTop_toBottomOf="@+id/register"
             app:layout_constraintBottom_toTopOf="@+id/editText"
