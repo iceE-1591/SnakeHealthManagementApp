@@ -2,4 +2,4 @@
 
 ### Custom ###
 /src/main/java/com/icee/snakehealthmanagementapp/other
-/src/main/java/com/icee/snakehealthmanagementapp/regex
+/src/main/java/com/icee/snakehealthmanagementapp/util/StringExRegex.kt
