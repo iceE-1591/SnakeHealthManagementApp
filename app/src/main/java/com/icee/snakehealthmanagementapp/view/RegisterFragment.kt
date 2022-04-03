@@ -1,16 +1,20 @@
 package com.icee.snakehealthmanagementapp.view
 
+import android.Manifest
+import android.content.pm.PackageManager
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.activity.result.contract.ActivityResultContracts
+import androidx.core.content.ContextCompat
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import com.icee.snakehealthmanagementapp.R
-import com.icee.snakehealthmanagementapp.databinding.FragmentRegisterBinding
 import com.icee.snakehealthmanagementapp.constant.ClickedState
+import com.icee.snakehealthmanagementapp.databinding.FragmentRegisterBinding
 import com.icee.snakehealthmanagementapp.viewmodel.RegisterData
 
 class RegisterFragment: Fragment(){
@@ -30,9 +34,31 @@ class RegisterFragment: Fragment(){
             when(it) {
                 ClickedState.MAIN -> (activity as MainActivity).navMain()
                 ClickedState.LOGIN -> findNavController().navigate(R.id.register_to_login)
+                ClickedState.ICON -> {
+                    // 権限を持っている場合
+                    if (ContextCompat.checkSelfPermission(this.requireContext(), Manifest.permission.READ_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED) {
+                    } else { // 権限を持っていない場合
+                        requestPermissions()
+                    }
+                }
             }
         }
 
         return binding.root
+    }
+
+    private fun requestPermissions() {
+        requestPermissionsLauncher.launch(arrayOf(
+            Manifest.permission.READ_EXTERNAL_STORAGE
+        ))
+    }
+
+    private val requestPermissionsLauncher =
+        registerForActivityResult(ActivityResultContracts.RequestMultiplePermissions()) {
+                grantStates: Map<String, Boolean> ->
+            grantStates.forEach {
+                if (it.value){ // 権限のリクエストを許可した時
+            }
+        }
     }
 }
