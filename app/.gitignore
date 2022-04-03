@@ -1,5 +1,5 @@
 /build
 
 ### Custom ###
-/src/main/java/com/icee/snakehealthmanagementapp/other
+/src/main/java/com/icee/snakehealthmanagementapp/constant/Env.kt
 /src/main/java/com/icee/snakehealthmanagementapp/util/StringExRegex.kt
