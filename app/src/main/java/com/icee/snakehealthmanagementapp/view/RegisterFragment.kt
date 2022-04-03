@@ -1,11 +1,14 @@
 package com.icee.snakehealthmanagementapp.view
 
 import android.Manifest
+import android.app.Activity
+import android.content.Intent
 import android.content.pm.PackageManager
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.activity.result.ActivityResult
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.core.content.ContextCompat
 import androidx.databinding.DataBindingUtil
@@ -15,6 +18,7 @@ import androidx.navigation.fragment.findNavController
 import com.icee.snakehealthmanagementapp.R
 import com.icee.snakehealthmanagementapp.constant.ClickedState
 import com.icee.snakehealthmanagementapp.databinding.FragmentRegisterBinding
+import com.icee.snakehealthmanagementapp.util.toBinary
 import com.icee.snakehealthmanagementapp.viewmodel.RegisterData
 
 class RegisterFragment: Fragment(){
@@ -37,6 +41,7 @@ class RegisterFragment: Fragment(){
                 ClickedState.ICON -> {
                     // 権限を持っている場合
                     if (ContextCompat.checkSelfPermission(this.requireContext(), Manifest.permission.READ_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED) {
+                        displayGallery()
                     } else { // 権限を持っていない場合
                         requestPermissions()
                     }
@@ -58,7 +63,24 @@ class RegisterFragment: Fragment(){
                 grantStates: Map<String, Boolean> ->
             grantStates.forEach {
                 if (it.value){ // 権限のリクエストを許可した時
+                    displayGallery()
             }
+        }
+    }
+
+    private fun displayGallery() {
+        val intent = Intent(Intent.ACTION_PICK)
+        intent.type = "image/*"
+        startForResult.launch(intent)
+    }
+
+    private val startForResult =
+        registerForActivityResult(ActivityResultContracts.StartActivityForResult()) {
+                result: ActivityResult? ->
+        if (result?.resultCode == Activity.RESULT_OK && result.data?.data != null) {
+            binding.icon.setImageURI(result.data?.data)
+            val binary = result.data?.data?.toBinary(this.requireContext())
+            // Api.updateIcon(binary)
         }
     }
 }
