@@ -10,6 +10,7 @@ class VerifyData : ViewModel() {
     private val _clickedState = LiveEvent<ClickedState>()
     val clickedState : LiveData<ClickedState> = _clickedState
     val code = MutableLiveData<String>()
+    val errorText = MutableLiveData<String>()
 
     fun toReset() {
         _clickedState.value = ClickedState.RESET
