@@ -11,6 +11,7 @@ class ResetData : ViewModel() {
     val clickedState : LiveData<ClickedState> = _clickedState
     val password = MutableLiveData<String>()
     val confirm = MutableLiveData<String>()
+    val errorText = MutableLiveData<String>()
 
     fun toMain() {
         _clickedState.value = ClickedState.MAIN
