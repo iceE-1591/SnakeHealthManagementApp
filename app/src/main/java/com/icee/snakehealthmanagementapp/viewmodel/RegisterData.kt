@@ -10,6 +10,7 @@ class RegisterData: ViewModel() {
     private val _clickedState = LiveEvent<ClickedState>()
     val clickedState : LiveData<ClickedState> = _clickedState
     val name = MutableLiveData<String>()
+    val errorText = MutableLiveData<String>()
 
     fun toIcon() {
         _clickedState.value = ClickedState.ICON
