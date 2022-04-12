@@ -33,9 +33,13 @@ class LoginFragment: Fragment(){
                     (activity as MainActivity).navMain()
                 }
                 ClickedState.REGISTER -> {
+                    if (viewmodel.checkEmail()) return@toError
+                    // API(アカウントがあればエラー)
                     findNavController().navigate(R.id.login_to_register)
                 }
                 ClickedState.VERIFY -> {
+                    if (viewmodel.checkEmail()) return@toError
+                    // API(アカウントがなければエラー)
                     findNavController().navigate(R.id.login_to_verify)
                 }
             }
