@@ -11,8 +11,8 @@ class LoginData : ViewModel() {
     private val _clickedState = LiveEvent<ClickedState>()
     val clickedState: LiveData<ClickedState> = _clickedState
     val checkbox = MutableLiveData<Boolean>()
-    val email = MutableLiveData<String>()
-    val password = MutableLiveData<String>()
+    val email = MutableLiveData("")
+    val password = MutableLiveData("")
     val errorText = MutableLiveData<String>()
 
     fun toMain() {
