@@ -30,6 +30,7 @@ class LoginFragment: Fragment(){
             when(it) {
                 ClickedState.MAIN -> {
                     if (viewmodel.checkEmail()) return@toError
+                    if (viewmodel.checkPassword()) return@toError
                     (activity as MainActivity).navMain()
                 }
                 ClickedState.REGISTER -> {
