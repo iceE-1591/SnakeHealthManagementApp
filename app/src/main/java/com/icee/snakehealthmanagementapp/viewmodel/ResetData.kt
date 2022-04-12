@@ -5,6 +5,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.hadilq.liveevent.LiveEvent
 import com.icee.snakehealthmanagementapp.constant.ClickedState
+import com.icee.snakehealthmanagementapp.util.regex
 
 class ResetData : ViewModel() {
     private val _clickedState = LiveEvent<ClickedState>()
@@ -18,5 +19,13 @@ class ResetData : ViewModel() {
     }
     fun toLogin() {
         _clickedState.value = ClickedState.LOGIN
+    }
+
+    fun checkPassword() : Boolean {
+        val checkedPassword = password.value.toString().regex {
+            passwordValidation()
+        }
+        errorText.value = checkedPassword.text
+        return checkedPassword.isError
     }
 }
