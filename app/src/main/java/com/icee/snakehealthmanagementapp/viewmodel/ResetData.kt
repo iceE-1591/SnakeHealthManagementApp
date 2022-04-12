@@ -28,4 +28,11 @@ class ResetData : ViewModel() {
         errorText.value = checkedPassword.text
         return checkedPassword.isError
     }
+    fun checkConfirmPassword() : Boolean {
+        val checkedConfirmPassword = confirm.value.toString().regex {
+            passwordEquals(password.value.toString())
+        }
+        errorText.value = checkedConfirmPassword.text
+        return checkedConfirmPassword.isError
+    }
 }
