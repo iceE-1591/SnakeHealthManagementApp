@@ -30,6 +30,7 @@ class ResetFragment: Fragment(){
             when(it) {
                 ClickedState.MAIN -> {
                     if(viewmodel.checkPassword()) return@toError
+                    if(viewmodel.checkConfirmPassword()) return@toError
                     (activity as MainActivity).navMain()
                 }
                 ClickedState.LOGIN -> findNavController().navigate(R.id.reset_to_login)
