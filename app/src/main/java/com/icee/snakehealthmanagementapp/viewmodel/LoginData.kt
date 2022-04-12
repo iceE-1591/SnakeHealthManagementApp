@@ -32,4 +32,11 @@ class LoginData : ViewModel() {
         errorText.value = checkedEmail.text
         return checkedEmail.isError
     }
+    fun checkPassword() : Boolean {
+        val checkedPassword = password.value.toString().regex {
+            passwordValidation()
+        }
+        errorText.value = checkedPassword.text
+        return checkedPassword.isError
+    }
 }
