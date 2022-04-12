@@ -34,9 +34,12 @@ class RegisterFragment: Fragment(){
         binding.lifecycleOwner = viewLifecycleOwner
         binding.vm = viewmodel
 
-        viewmodel.clickedState.observe(viewLifecycleOwner) {
+        viewmodel.clickedState.observe(viewLifecycleOwner) toError@ {
             when(it) {
-                ClickedState.MAIN -> (activity as MainActivity).navMain()
+                ClickedState.MAIN -> {
+                    if (viewmodel.checkName()) return@toError
+                    (activity as MainActivity).navMain()
+                }
                 ClickedState.LOGIN -> findNavController().navigate(R.id.register_to_login)
                 ClickedState.ICON -> {
                     // 権限を持っている場合
@@ -48,7 +51,6 @@ class RegisterFragment: Fragment(){
                 }
             }
         }
-
         return binding.root
     }
 
