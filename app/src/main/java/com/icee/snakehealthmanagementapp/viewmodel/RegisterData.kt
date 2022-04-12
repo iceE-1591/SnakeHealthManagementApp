@@ -5,6 +5,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.hadilq.liveevent.LiveEvent
 import com.icee.snakehealthmanagementapp.constant.ClickedState
+import com.icee.snakehealthmanagementapp.util.regex
 
 class RegisterData: ViewModel() {
     private val _clickedState = LiveEvent<ClickedState>()
@@ -20,5 +21,13 @@ class RegisterData: ViewModel() {
     }
     fun toLogin() {
         _clickedState.value = ClickedState.LOGIN
+    }
+
+    fun checkName() : Boolean {
+        val checkedName = name.value.toString().regex {
+            nameValidation()
+        }
+        errorText.value = checkedName.text
+        return checkedName.isError
     }
 }
