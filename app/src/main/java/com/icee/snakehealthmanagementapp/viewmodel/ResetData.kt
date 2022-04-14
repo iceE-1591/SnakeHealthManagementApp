@@ -10,7 +10,7 @@ import com.icee.snakehealthmanagementapp.util.regex
 class ResetData : ViewModel() {
     private val _clickedState = LiveEvent<ClickedState>()
     val clickedState : LiveData<ClickedState> = _clickedState
-    val password = MutableLiveData<String>()
+    val password = MutableLiveData("")
     val confirm = MutableLiveData<String>()
     val errorText = MutableLiveData<String>()
 
