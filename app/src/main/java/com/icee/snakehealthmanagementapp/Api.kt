@@ -1,4 +1,4 @@
-package com.icee.snakehealthmanagementapp.api
+package com.icee.snakehealthmanagementapp
 
 import com.icee.snakehealthmanagementapp.constant.Env
 import com.icee.snakehealthmanagementapp.repository.UserRepository
@@ -29,13 +29,13 @@ object Api {
 
         // RetrofitをBuild
         val client = httpClient.build()
-        this.retrofit = Retrofit.Builder()
+        retrofit = Retrofit.Builder()
             .baseUrl(Env.API_BASEURL)
             .client(client)
             .addConverterFactory(MoshiConverterFactory.create(moshi))
             .build()
 
         // Serviceをインスタンスに
-        this.userService = this.retrofit.create(UserRepository::class.java)
+        userService = retrofit.create(UserRepository::class.java)
     }
 }
