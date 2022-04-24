@@ -19,6 +19,7 @@
     <string name="verify_title_text">VERIFY</string>
     <string name="verify_description_text">メールに認証コードを送信しました\n認証コードを入力してください\n認証が完了すると\nパスワードがリセットされます</string>
     <string name="verify_code_hint">コードを入力</string>
+    <string name="verify_code_description">入力したメールアドレスに\n送信されたコードを入力してください</string>
     <string name="verify_resend_text">メールが送られてこない？　再送信</string>
     <string name="verify_send_button">SEND</string>
 
