@@ -1,6 +1,7 @@
 package com.icee.snakehealthmanagementapp
 
 import com.icee.snakehealthmanagementapp.constant.Env
+import com.icee.snakehealthmanagementapp.repository.MailRepository
 import com.icee.snakehealthmanagementapp.repository.UserRepository
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
@@ -11,6 +12,7 @@ import retrofit2.converter.moshi.MoshiConverterFactory
 object Api {
     private val retrofit : Retrofit
     val userService : UserRepository
+    val mailService : MailRepository
 
     init {
         // Jsonのパースライブラリ
@@ -37,5 +39,6 @@ object Api {
 
         // Serviceをインスタンスに
         userService = retrofit.create(UserRepository::class.java)
+        mailService = retrofit.create(MailRepository::class.java)
     }
 }
