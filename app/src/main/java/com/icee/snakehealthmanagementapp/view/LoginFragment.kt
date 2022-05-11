@@ -26,21 +26,15 @@ class LoginFragment: Fragment(){
         binding.lifecycleOwner = viewLifecycleOwner
         binding.vm = viewmodel
 
-        viewmodel.clickedState.observe(viewLifecycleOwner) toError@ {
+        viewmodel.clickedState.observe(viewLifecycleOwner) {
             when(it) {
                 ClickedState.MAIN -> {
-                    if (viewmodel.checkEmail()) return@toError
-                    if (viewmodel.checkPassword()) return@toError
                     (activity as MainActivity).navMain()
                 }
                 ClickedState.REGISTER -> {
-                    if (viewmodel.checkEmail()) return@toError
-                    // API(アカウントがあればエラー)
                     findNavController().navigate(R.id.login_to_register)
                 }
                 ClickedState.VERIFY -> {
-                    if (viewmodel.checkEmail()) return@toError
-                    // API(アカウントがなければエラー)
                     findNavController().navigate(R.id.login_to_verify)
                 }
             }
