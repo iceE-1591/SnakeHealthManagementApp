@@ -9,6 +9,7 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import com.icee.snakehealthmanagementapp.R
+import com.icee.snakehealthmanagementapp.SharedDatas
 import com.icee.snakehealthmanagementapp.constant.ClickedState
 import com.icee.snakehealthmanagementapp.databinding.FragmentVerifyBinding
 import com.icee.snakehealthmanagementapp.viewmodel.VerifyData
@@ -32,6 +33,11 @@ class VerifyFragment: Fragment(){
             }
         }
 
+        viewmodel.code.observe(viewLifecycleOwner) {
+            if(it.length == 4) {
+                if(it.toString() == SharedDatas.code) findNavController().navigate(R.id.verify_to_reset)
+            }
+        }
         return binding.root
     }
 }
