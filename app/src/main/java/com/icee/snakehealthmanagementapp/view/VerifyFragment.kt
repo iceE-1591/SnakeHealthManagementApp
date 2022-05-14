@@ -26,12 +26,8 @@ class VerifyFragment: Fragment(){
         binding.lifecycleOwner = viewLifecycleOwner
         binding.vm = viewmodel
 
-        viewmodel.clickedState.observe(viewLifecycleOwner) toError@ {
+        viewmodel.clickedState.observe(viewLifecycleOwner) {
             when(it) {
-                ClickedState.RESET -> {
-                    if(viewmodel.checkCode()) return@toError
-                    findNavController().navigate(R.id.verify_to_reset)
-                }
                 ClickedState.LOGIN -> findNavController().navigate(R.id.verify_to_login)
             }
         }
