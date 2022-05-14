@@ -18,17 +18,21 @@ class VerifyData(application: Application) : AndroidViewModel(application) {
     val clickedState : LiveData<ClickedState> = _clickedState
     val code = MutableLiveData("")
     val errorText = MutableLiveData<String>()
+    private var job = false
 
     fun toLogin() {
         _clickedState.value = ClickedState.LOGIN
     }
 
     fun reSend() {
+        if (job) return
+        job = true
         viewModelScope.launch {
             val result = withTimeoutOrNull(5000) {
                 MailModel().sendCode(SharedDatas.address)
             }
             result ?: Toast.makeText(getApplication(), "インターネットが接続されていない可能性があります。", Toast.LENGTH_LONG).show()
+            job = false
         }
     }
 }
