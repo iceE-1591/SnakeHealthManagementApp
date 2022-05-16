@@ -1,7 +1,9 @@
 package com.icee.snakehealthmanagementapp.repository
 
 import com.icee.snakehealthmanagementapp.entity.User
+import retrofit2.http.Body
 import retrofit2.http.GET
+import retrofit2.http.POST
 import retrofit2.http.Path
 
 interface UserRepository {
@@ -10,4 +12,7 @@ interface UserRepository {
 
     @GET("users/login/{address}/{password}")
     suspend fun login(@Path("address") address: String, @Path("password") password: String) : User
+
+    @POST("users")
+    suspend fun create(@Body user: User) : Int
 }
