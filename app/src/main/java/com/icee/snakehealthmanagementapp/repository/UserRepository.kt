@@ -4,6 +4,6 @@ import retrofit2.http.GET
 import retrofit2.http.Path
 
 interface UserRepository {
-    @GET("users/search/{address}")
+    @GET("users/{address}")
     suspend fun search(@Path("address") address: String) : Boolean
 }
