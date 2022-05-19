@@ -15,4 +15,8 @@ class UserModel {
         withContext(Dispatchers.Default) {
             Api.userService.create(user)
         }
+    suspend fun login(address: String, password: String) : User =
+        withContext(Dispatchers.Default) {
+            Api.userService.login(address, password)
+        }
 }
