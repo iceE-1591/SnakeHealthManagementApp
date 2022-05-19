@@ -1,6 +1,7 @@
 package com.icee.snakehealthmanagementapp.model
 
 import com.icee.snakehealthmanagementapp.Api
+import com.icee.snakehealthmanagementapp.entity.User
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 
@@ -9,5 +10,9 @@ class UserModel {
     suspend fun search(address: String) : Boolean =
         withContext(Dispatchers.Default) {
             Api.userService.search(address)
+        }
+    suspend fun create(user: User) : Int =
+        withContext(Dispatchers.Default) {
+            Api.userService.create(user)
         }
 }
