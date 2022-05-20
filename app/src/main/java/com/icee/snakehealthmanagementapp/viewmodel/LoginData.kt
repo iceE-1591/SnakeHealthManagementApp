@@ -1,13 +1,14 @@
 package com.icee.snakehealthmanagementapp.viewmodel
 
+import android.app.Application
+import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
-import androidx.lifecycle.ViewModel
 import com.hadilq.liveevent.LiveEvent
 import com.icee.snakehealthmanagementapp.constant.ClickedState
 import com.icee.snakehealthmanagementapp.util.regex
 
-class LoginData : ViewModel() {
+class LoginData(application: Application) : AndroidViewModel(application) {
     private val _clickedState = LiveEvent<ClickedState>()
     val clickedState: LiveData<ClickedState> = _clickedState
     val checkbox = MutableLiveData<Boolean>()
@@ -25,14 +26,14 @@ class LoginData : ViewModel() {
         _clickedState.value = ClickedState.VERIFY
     }
 
-    fun checkEmail() : Boolean {
+    private fun checkEmail() : Boolean {
         val checkedEmail = email.value.toString().regex {
             emailValidation()
         }
         errorText.value = checkedEmail.text
         return checkedEmail.isError
     }
-    fun checkPassword() : Boolean {
+    private fun checkPassword() : Boolean {
         val checkedPassword = password.value.toString().regex {
             passwordValidation()
         }
