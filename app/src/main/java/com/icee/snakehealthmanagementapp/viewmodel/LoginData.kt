@@ -34,6 +34,10 @@ class LoginData(application: Application) : AndroidViewModel(application) {
         _clickedState.value = ClickedState.VERIFY
     }
 
+    private fun error(txt: String) {
+        errorText.value = txt
+    }
+
     private fun checkEmail() : Boolean {
         val checkedEmail = email.value.toString().regex {
             emailValidation()
