@@ -15,7 +15,4 @@ object SharedDatas {
         address = user.address
         iconPath = user.iconPath
     }
-    fun setCode(code: String) {
-        this.code = code
-    }
 }
