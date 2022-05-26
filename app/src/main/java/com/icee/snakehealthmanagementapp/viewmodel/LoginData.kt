@@ -25,12 +25,17 @@ class LoginData(application: Application) : AndroidViewModel(application) {
     val errorText = MutableLiveData<String>()
 
     fun toMain() {
+        if (checkEmail()) return
+        if (checkPassword()) return
         _clickedState.value = ClickedState.MAIN
     }
     fun toRegister() {
+        if (checkEmail()) return
+        if (checkPassword()) return
         _clickedState.value = ClickedState.REGISTER
     }
     fun toVerify() {
+        if (checkEmail()) return
         _clickedState.value = ClickedState.VERIFY
     }
 
