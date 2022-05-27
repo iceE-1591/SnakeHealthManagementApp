@@ -32,6 +32,7 @@ class LoginData(application: Application) : AndroidViewModel(application) {
     fun toRegister() {
         if (checkEmail()) return
         if (checkPassword()) return
+        if (search()) return error("アカウントが既に存在する可能性があります") // アカウントが既に存在する場合は処理を中断
         _clickedState.value = ClickedState.REGISTER
     }
     fun toVerify() {
