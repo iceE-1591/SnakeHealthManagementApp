@@ -27,6 +27,9 @@ class LoginData(application: Application) : AndroidViewModel(application) {
     fun toMain() {
         if (checkEmail()) return
         if (checkPassword()) return
+        val user = login()
+        // login可能だったら、datasに情報を渡す
+        SharedDatas.setUser(user)
         _clickedState.value = ClickedState.MAIN
     }
     fun toRegister() {
