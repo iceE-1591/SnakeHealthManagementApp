@@ -28,6 +28,7 @@ class LoginData(application: Application) : AndroidViewModel(application) {
         if (checkEmail()) return
         if (checkPassword()) return
         val user = login()
+        if (user.id == 0) return error("メールアドレスまたはパスワードが\n間違っている可能性があります")
         // login可能だったら、datasに情報を渡す
         SharedDatas.setUser(user)
         _clickedState.value = ClickedState.MAIN
