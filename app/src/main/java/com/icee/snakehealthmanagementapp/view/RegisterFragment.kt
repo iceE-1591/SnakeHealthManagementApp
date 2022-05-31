@@ -34,10 +34,9 @@ class RegisterFragment: Fragment(){
         binding.lifecycleOwner = viewLifecycleOwner
         binding.vm = viewmodel
 
-        viewmodel.clickedState.observe(viewLifecycleOwner) toError@ {
+        viewmodel.clickedState.observe(viewLifecycleOwner) {
             when(it) {
                 ClickedState.MAIN -> {
-                    if (viewmodel.checkName()) return@toError
                     (activity as MainActivity).navMain()
                 }
                 ClickedState.LOGIN -> findNavController().navigate(R.id.register_to_login)
