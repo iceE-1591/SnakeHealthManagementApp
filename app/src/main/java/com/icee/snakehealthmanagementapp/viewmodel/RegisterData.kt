@@ -23,7 +23,7 @@ class RegisterData: ViewModel() {
         _clickedState.value = ClickedState.LOGIN
     }
 
-    fun checkName() : Boolean {
+    private fun checkName() : Boolean {
         val checkedName = name.value.toString().regex {
             nameValidation()
         }
