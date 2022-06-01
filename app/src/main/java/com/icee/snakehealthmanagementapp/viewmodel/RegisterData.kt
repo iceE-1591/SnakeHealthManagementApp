@@ -17,6 +17,7 @@ class RegisterData: ViewModel() {
         _clickedState.value = ClickedState.ICON
     }
     fun toMain() {
+        if (checkName()) return
         _clickedState.value = ClickedState.MAIN
     }
     fun toLogin() {
