@@ -31,6 +31,10 @@ class RegisterData(application: Application) : AndroidViewModel(application) {
         _clickedState.value = ClickedState.LOGIN
     }
 
+    private fun error(txt: String) {
+        errorText.value = txt
+    }
+
     private fun checkName() : Boolean {
         val checkedName = name.value.toString().regex {
             nameValidation()
