@@ -22,6 +22,9 @@
         android:name="com.icee.snakehealthmanagementapp.view.RegisterFragment"
         android:label="register"
         tools:layout="@layout/fragment_register">
+        <argument
+            android:name="address"
+            app:argType="string"/>
         <action
             android:id="@+id/register_to_login"
             app:destination="@id/loginFragment"/>
