@@ -25,6 +25,9 @@
         <argument
             android:name="address"
             app:argType="string"/>
+        <argument
+            android:name="password"
+            app:argType="string"/>
         <action
             android:id="@+id/register_to_login"
             app:destination="@id/loginFragment"/>
