@@ -15,6 +15,8 @@ import kotlinx.coroutines.launch
 import kotlinx.coroutines.withTimeoutOrNull
 
 class RegisterData(application: Application) : AndroidViewModel(application) {
+    var address = ""
+    var password = ""
     private val _clickedState = LiveEvent<ClickedState>()
     val clickedState : LiveData<ClickedState> = _clickedState
     val name = MutableLiveData<String>()
