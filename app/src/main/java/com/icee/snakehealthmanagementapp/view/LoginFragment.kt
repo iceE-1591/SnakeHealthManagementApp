@@ -29,7 +29,10 @@ class LoginFragment: Fragment(){
         viewmodel.clickedState.observe(viewLifecycleOwner) {
             when(it) {
                 ClickedState.MAIN -> (activity as MainActivity).navMain()
-                ClickedState.REGISTER -> findNavController().navigate(R.id.login_to_register)
+                ClickedState.REGISTER -> {
+                    val action = LoginFragmentDirections.loginToRegister(viewmodel.email.value.toString(), viewmodel.password.value.toString())
+                    findNavController().navigate(action)
+                }
                 ClickedState.VERIFY -> findNavController().navigate(R.id.login_to_verify)
             }
         }
