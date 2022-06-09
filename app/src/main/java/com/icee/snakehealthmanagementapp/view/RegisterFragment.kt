@@ -15,6 +15,7 @@ import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
+import androidx.navigation.fragment.navArgs
 import com.icee.snakehealthmanagementapp.R
 import com.icee.snakehealthmanagementapp.constant.ClickedState
 import com.icee.snakehealthmanagementapp.databinding.FragmentRegisterBinding
@@ -24,6 +25,7 @@ import com.icee.snakehealthmanagementapp.viewmodel.RegisterData
 class RegisterFragment: Fragment(){
     private lateinit var binding: FragmentRegisterBinding
     private val viewmodel by viewModels<RegisterData>()
+    private val args : RegisterFragmentArgs by navArgs()
 
     override fun onCreateView(
         inflater: LayoutInflater,
