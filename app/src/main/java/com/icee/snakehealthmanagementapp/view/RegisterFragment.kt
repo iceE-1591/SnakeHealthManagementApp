@@ -35,8 +35,8 @@ class RegisterFragment: Fragment(){
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_register, container, false)
         binding.lifecycleOwner = viewLifecycleOwner
         binding.vm = viewmodel
-        binding.vm.address = args.address
-        binding.vm.password = args.password
+        viewmodel.address = args.address
+        viewmodel.password = args.password
 
         viewmodel.clickedState.observe(viewLifecycleOwner) {
             when(it) {
