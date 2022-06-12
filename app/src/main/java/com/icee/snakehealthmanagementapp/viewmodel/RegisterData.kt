@@ -20,6 +20,7 @@ class RegisterData(application: Application) : AndroidViewModel(application) {
     private val _clickedState = LiveEvent<ClickedState>()
     val clickedState : LiveData<ClickedState> = _clickedState
     val name = MutableLiveData<String>()
+    var iconPath = MutableLiveData<ByteArray>()
     val errorText = MutableLiveData<String>()
 
     fun toIcon() {
