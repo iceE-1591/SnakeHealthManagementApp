@@ -86,6 +86,7 @@ class RegisterFragment: Fragment(){
             binding.icon.setImageURI(result.data?.data)
             val binary = result.data?.data?.toBinary(this.requireContext())
             // Api.updateIcon(binary)
+            viewmodel.iconPath.value = binary
         }
     }
 }
