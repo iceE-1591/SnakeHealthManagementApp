@@ -28,6 +28,7 @@ class RegisterData(application: Application) : AndroidViewModel(application) {
     }
     fun toMain() {
         if (checkName()) return
+        val user = User(0, name.value.toString(), address, password, iconPath.value.toString())
         _clickedState.value = ClickedState.MAIN
     }
     fun toLogin() {
