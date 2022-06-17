@@ -42,6 +42,7 @@ class LoginData(application: Application) : AndroidViewModel(application) {
     fun toVerify() {
         if (checkEmail()) return
         if (!search()) return error("アカウントが存在しません")
+        sendCode()
         _clickedState.value = ClickedState.VERIFY
     }
 
