@@ -8,6 +8,7 @@ object SharedDatas {
     var name: String = ""
     var address: String = ""
     var iconPath: String? = null
+    var checkBox: Boolean = false
 
     fun setUser(user: User) {
         id = user.id
