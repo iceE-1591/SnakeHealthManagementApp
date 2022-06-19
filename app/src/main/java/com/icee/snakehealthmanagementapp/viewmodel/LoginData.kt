@@ -37,6 +37,7 @@ class LoginData(application: Application) : AndroidViewModel(application) {
         if (checkEmail()) return
         if (checkPassword()) return
         if (search()) return error("アカウントが既に存在する可能性があります") // アカウントが既に存在する場合は処理を中断
+        SharedDatas.checkBox = checkbox.value!!
         _clickedState.value = ClickedState.REGISTER
     }
     fun toVerify() {
